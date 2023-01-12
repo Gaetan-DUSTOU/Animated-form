@@ -1,0 +1,88 @@
+/* form {
+    min-height: 1000px;
+} */
+.opacity {
+    animation: apparition 7s;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.droite {
+    animation: droite 2s;
+    
+}
+
+@keyframes droite {
+    from {
+        margin-right: -100%;
+        opacity: 0;
+        
+    }
+    to {
+        margin-right: 0%;
+        opacity: 1;
+    }
+}
+
+.gauche {
+    animation: gauche 2s;
+    
+}
+
+@keyframes gauche {
+    from {
+        margin-left: -100%;
+        opacity: 0;
+        
+    }
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+
+button {
+    box-shadow: 0 0 0 0 rgb(25, 0, 255);
+    animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 18px rgba(0, 4, 255, 0.01);
+    }
+}
+
+button:hover {
+    animation: nope .4s forwards;
+}
+
+@keyframes nope {
+
+    0% {
+        transform: translateX(0px);
+    }
+    20% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-10px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
